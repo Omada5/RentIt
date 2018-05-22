@@ -1,0 +1,101 @@
+ 
+
+<body>
+<meta charset="UTF-8">
+
+<center>
+
+<div style="display:inline-block;vertical-align: middle;text-align:left;
+-webkit-box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.75);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); padding: 8px; border-radius:6px;">
+<div style="display:inline-block; font-family:Helvetica, sans-serif; text-align:left;">
+<label>Όνομα: <input type="text" id="onoma" size="30"></label> 
+<br><br>
+
+<label>Επώνυμο: <input type="text" id="eponymo" size="30"></label> 
+<br><br>
+<label>Αριθμός Ταυτότητας: <input type="text" id="eponymo" size="30"></label> 
+<br><br>
+Φύλο: <select id="fylo" onchange="fylo()">
+  <optgroup label="Φύλο">
+    <option value="1" selected>Άνδρας</option>
+	<option value="2">Γυναίκα</option>
+    
+  </optgroup>
+  
+  
+
+</select>
+<label>Ηλικία: <input type="text" id="eponymo" size="30"></label> 
+<div id="datepicker_display" style="display:none; z-index: 1; position:fixed; top:0px; left:0px; width:100%; height:100%; background-color:rgba(54, 37, 37, 0.38);">
+<div id="signa_datepicker" style="position:fixed; border-radius: 4px; top:150px; left:50%; margin-left:-152px; background: #FFFFFF; padding: 12px;  ">
+</div>
+</div><br><br> 
+
+
+<hr style="border-bottom: 1px solid #989898;">
+<br>
+
+Ημερομηνία Παραλαβής:  <input type="text" id="paralabbh" size="30" style="vertical-align: middle;" disabled>&nbsp;<img src="images/calendar.png"  onclick="datepicker_show()" style="width:32px;vertical-align: middle;cursor:pointer;" />
+<br>
+<br>
+
+Ημερομηνία Παράδοσης:  <input type="text" id="paradosh" size="30" style="vertical-align: middle;" disabled>&nbsp;<img src="images/calendar.png"  onclick="datepicker_show()" style="width:32px;vertical-align: middle;cursor:pointer;" />
+</label>
+
+<br>
+
+<hr style="border-bottom: 1px solid #989898;">
+<br>
+
+Τύπος Σασμάν: <select id="sasman" onchange="sasman()">
+  <optgroup label="Σασμάν">
+    <option value="1" selected>Αυτόματο</option>
+	<option value="2">Με ταχύτητες</option>
+    
+  </optgroup>
+  
+</select>
+  Τύπος Οχήματος: <select id="typos" onchange="typos()">
+  <optgroup label="Όχημα">
+    <option value="1" selected>Convertable</option>
+	<option value="2">SUV</option>
+	<option value="3" selected>Mini Bus</option>
+	<option value="4">Luxury</option>
+	<option value="5">Sedan</option>
+    
+  </optgroup>
+  
+</select>
+  Καύσιμο: <select id="kaysimo" onchange="kaysimo()">
+  <optgroup label="Καύσιμο">
+    <option value="1" selected>Βενζίνη</option>
+	<option value="2">Πετρέλαιο</option>
+	<option value="3">Αέριο</option>
+    
+  </optgroup>
+
+</select>
+
+<br><br>
+
+</div>
+</center>
+<br>
+<hr style="border-bottom: 1px solid #989898;">
+
+
+
+
+<div id="cash_compl" style="text-align:center;">
+<br>
+
+<button onclick="submit_simple()" class="button">ΟΛΟΚΛΗΡΩΣΗ</button>
+<br>
+</div>
+
+</div>
+
+
+</body>
